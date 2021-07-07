@@ -1,0 +1,169 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix pesc: <https://www.pesc.org/transcript/> .
+@prefix ex: <http://example.org/> .
+
+ex:80f95181-dcfb-42fb-a3c8-afc3ef092608 a pesc:CollegeTranscript ;
+    pesc:transmissionData ex:64966b06-dd50-419b-83c1-d751f4ec92a7;
+    pesc:student ex:0b81d4c5-6177-484f-b508-197119768e39 .
+    
+ex:64966b06-dd50-419b-83c1-d751f4ec92a7 a pesc:TransmissionData ;
+    pesc:source ex:03a1fc57-0879-4ac2-aa00-f29bbe5e8eb2 ;
+    pesc:destination ex:6e85bd42-efbe-4929-88ea-40f4bb6f0ad7 ;
+    pesc:documentID "050330001" ;
+    pesc:createdDateTime "2005-02-02T10:04:29-05:00"^^xsd:dateTime ;
+    pesc:documentTypeCode "RequestedRecord" ;
+    pesc:transmissionType "Original" .
+
+ex:03a1fc57-0879-4ac2-aa00-f29bbe5e8eb2 a pesc:Organization ;
+    pesc:localOrganizationID ex:fe5e4aeb-5474-417d-9ec8-26f7840cc672 ;
+    pesc:accreditation ex:68075a07-7e52-43ec-b9c8-28dfc7ba7dbc ;
+    pesc:contact ex:99b1226b-0a95-455d-be7e-1e8d1087ccd2 ;
+    pesc:atp "006882" ;
+    pesc:organizationName "THE UNIVERSITY OF TEXAS AT AUSTIN"@en-US .
+    
+ex:68075a07-7e52-43ec-b9c8-28dfc7ba7dbc a pesc:Accreditation ;
+    pesc:accreditingBodyCode "SACS";
+    pesc:accreditingBodyName "Southern Association of Colleges and Schools"@en-US .
+    
+ex:6e85bd42-efbe-4929-88ea-40f4bb6f0ad7 a pesc:Organization ;
+    pesc:fice "001506" ;
+    pesc:localOrganizationID ex:ac8ed498-6107-4a89-8f5f-f4643d191a1e ;
+    pesc:organizationName "Miami Dade College"@en-US .
+       
+ex:fe5e4aeb-5474-417d-9ec8-26f7840cc672 a pesc:LocalOrganizationID ;
+    pesc:localOrganizationIDCode "123456" ;
+    pesc:localOrgainzationIDQualifier "TX" .
+    
+ex:ac8ed498-6107-4a89-8f5f-f4643d191a1e a pesc:LocalOrganizationID ;
+    pesc:localOrganizationCodeID "1234" ;
+    pesc:localOrganizationCodeQualifier "FL" .
+
+ex:99b1226b-0a95-455d-be7e-1e8d1087ccd2 a pesc:Contact ;
+    pesc:address ex:50e5db7d-2abf-491d-85da-6b3727e38662 ;
+    pesc:phone ex:40a77368-df54-473f-976e-948d0a48feee ;
+    pesc:faxPhone ex:12a27d1e-648d-4517-acff-d42c754042ab ;
+    pesc:email "Registrar@mail.utexas.edu" ;
+    pesc:url "www.utexas.edu" .
+    
+ex:50e5db7d-2abf-491d-85da-6b3727e38662 a pesc:Address ;
+    pesc:addressLine "Office of the Registrar"@en-US ;
+    pesc:city "Austin" ;
+    pesc:stateProvinceCode "TX" ;
+    pesc:postalCode "78712" ;
+    pesc:attentionLine "Jane Shaugness" .
+    
+ex:40a77368-df54-473f-976e-948d0a48feee a pesc:Phone ;
+    pesc:areaCityCode "512" ;
+    pesc:phoneNumber "4757638" .
+
+ex:12a27d1e-648d-4517-acff-d42c754042ab a pesc:FaxPhone ;
+    pesc:areaCityCode "512" ;
+    pesc:phoneNumber "4757600" .
+
+ex:0b81d4c5-6177-484f-b508-197119768e39 a pesc:Student ;
+    pesc:person ex:53acb75f-0576-463f-ae24-dcd9a638c11d ;
+    pesc:academicRecord ex:d1fe09c8-d833-4266-ab1b-7c7d51d42fa2 .
+    
+ex:53acb75f-0576-463f-ae24-dcd9a638c11d a pesc:Person ;
+    pesc:ssn "100000000" ;
+    pesc:birthDate "1967-07-14" ;
+    pesc:genderCode "Female"@en-US ;
+    pesc:deceasedIndicator true ;
+    pesc:name ex:23df2465-d3a1-4f2a-891f-36241037e23a ;
+    pesc:contact ex:f84b153e-9d79-4d6d-9d14-b286cd51b555 ;
+    pesc:highschool ex:e6f9b24f-8a03-4f33-bc8e-e1af776a23f6 .
+    
+ex:23df2465-d3a1-4f2a-891f-36241037e23a a pesc:Name ;
+    pesc:nameCode "Legal" ;
+    pesc:firstName "Test" ;
+    pesc:middleName "Record", "Test" ;
+    pesc:lastName "Speede" ;
+    pesc:nameSuffix "IV" .
+
+ex:f84b153e-9d79-4d6d-9d14-b286cd51b555 a pesc:Contact ;
+    pesc:address ex:ffde90ad-77cf-4920-a2ec-752b33f029f1 ; 
+    pesc:email "TestSpeede@aol.com" .
+    
+ex:ffde90ad-77cf-4920-a2ec-752b33f029f1 a pesc:Address ;
+    pesc:addressLine "1223 University Dr" ;
+    pesc:city "Austin" ;
+    pesc:stateProvinceCode "TX" ;
+    pesc:postalCode "78211" ;
+    pesc:expirationDate "2009-06-15" .
+
+ex:e6f9b24f-8a03-4f33-bc8e-e1af776a23f6 a pesc:Organization ;
+    pesc:organizationName "AUSTIN HIGH SCHOOL"@en-US ;
+    pesc:ceebact "440320" .
+
+ex:d1fe09c8-d833-4266-ab1b-7c7d51d42fa2 a pesc:AcademicRecord ;
+    pesc:schoolAcademicAward  ex:42a0ea60-b57b-4c05-9b79-1ecaa26b7db3 ;
+    pesc:academicSummary ex:9ab000e8-cbae-4660-8d6c-e19d4e50d8b4 ;
+    pesc:academicSession ex:660b6b69-55a6-447b-b585-502405d178b7 .
+    
+ex:42a0ea60-b57b-4c05-9b79-1ecaa26b7db3 a pesc:SchoolAcademicAward ;
+    pesc:academicAward ex:0cbaad91-1e79-47b9-bb75-2978ddcf63e0 ;
+    pesc:school ex:e6f9b24f-8a03-4f33-bc8e-e1af776a23f6 .
+    
+ex:0cbaad91-1e79-47b9-bb75-2978ddcf63e0 a pesc:AcademicAward ;
+    pesc:academicAwardLevel "B18" ;
+    pesc:academicAwardDate "1985-05-01" ;
+    pesc:academicAwardTitle "Standard High School Diploma" ;
+    pesc:academicCompletionIndicator true .
+    
+ex:9ab000e8-cbae-4660-8d6c-e19d4e50d8b4 a pesc:AcademicSummary ;
+    pesc:academicSummaryType "All" ;
+    pesc:academicSummaryLevel "Undergraduate" ;
+    pesc:gpa ex:f0993816-d86c-4086-b483-7924adb80f5e .
+    
+ex:f0993816-d86c-4086-b483-7924adb80f5e a pesc:GPA ;
+    pesc:creditHoursAttempted 159 ;
+    pesc:creditHoursEarned 136 ;
+    pesc:creditUnit "Semester" ;
+    pesc:gradePointAverage 3.0915 ;
+    pesc:creditHoursforGPA 153 .
+    
+ex:660b6b69-55a6-447b-b585-502405d178b7 a pesc:AcademicSession ;
+    pesc:academicSessionDetail ex:02a0214a-a4a5-4fc3-a8a4-5198e0527910 .
+    
+ex:02a0214a-a4a5-4fc3-a8a4-5198e0527910 a pesc:AcademicSessionDetail ;
+    pesc:sessionDesignator "1986-09" ;
+    pesc:sessionDesignatorSuffix "2" ;  
+    pesc:sessionName "FALL SEMESTER 1986" ;
+    pesc:sessionType "Semester" ;
+    pesc:academicProgram ex:8bc3b350-e847-46be-ad51-63f1aeb03971 ;
+    pesc:course ex:88139774-0f57-42fd-a16f-5e6ca2189b28 ;
+    pesc:academicSummary ex:06ca0470-9ea5-444b-837a-f23167993232 .
+    
+ex:8bc3b350-e847-46be-ad51-63f1aeb03971 a pesc:AcademicProgram ;
+    pesc:academicProgramName "ENGINERING" .
+
+ex:88139774-0f57-42fd-a16f-5e6ca2189b28 a pesc:Course ;
+    pesc:courseCreditBasis "Regular" ;
+    pesc:courseCreditUnits "Semester" ;
+    pesc:courseCreditLevel "LowerDivision" ;
+    pesc:courseCreditValue 3 ;
+    pesc:courseCreditEarned 3 ;
+    pesc:courseAcademicGradeScaleCode "25" ;
+    pesc:courseAcademicGrade "B" ;
+    pesc:courseCIPCode "999" ;
+    pesc:courseSubjectAbbreviation "GOV" ;
+    pesc:courseNumber "310L" ;
+    pesc:originalCourseID "ID23" ;
+    pesc:courseTitle "AMERICAN GOVERNMENT"@en-US .
+
+ex:06ca0470-9ea5-444b-837a-f23167993232 a pesc:AcademicSummary ;
+    pesc:gpa ex:c03ed137-1d42-48e8-9679-d77e6fa72fe4 .
+    
+ex:c03ed137-1d42-48e8-9679-d77e6fa72fe4 a pesc:GPA ;
+    pesc:creditHoursAttempted 13 ;
+    pesc:creditHoursEarned 7 ;
+    pesc:creditUnit "Semester" ;
+    pesc:gradePointAverage 1.3076 ;
+    pesc:creditHoursforGPA 13 .
+
+    
+     
+
+    

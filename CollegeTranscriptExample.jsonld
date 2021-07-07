@@ -1,0 +1,305 @@
+{
+	"@context": {
+	    "pesc": "https://www.pesc.org/transcript/",
+	    "xsd": "http://www.w3.org/2001/XMLSchema#",
+	    "academicAward": {"@id": "pesc:academicAward", "@type": "id"},
+	    "academicAwardDate": {"@id": "pesc:academicAwardDate", "@type": "xsd:date"},
+	    "academicAwardLevel": {"@id": "pesc:academicAwardLevel", "@type": "xsd:string"},
+	    "academicAwardTitle": {"@id": "pesc:academicAwardTitle", "@type": "xsd:string"},
+	    "academicCompletionIndicator": {"@id": "pesc:academicCompletionIndicator", "@type": "xsd:boolean"},
+	    "academicProgram": {"@id": "pesc:academicProgram", "@type": "id"},
+	    "academicProgramName": {"@id": "pesc:academicProgramName", "@type": "xsd:string"},
+	    "academicRecord": {"@id": "pesc:academicRecord", "@type": "id"},
+	    "academicSession": {"@id": "pesc:academicSession", "@type": "id"},
+	    "academicSessionDetail": {"@id": "pesc:academicSessionDetail", "@type": "id"},
+	    "academicSummary": {"@id": "pesc:academicSummary", "@type": "id"},
+	    "academicSummaryLevel": {"@id": "pesc:academicSummaryLevel", "@type": "xsd:string"},
+	    "academicSummaryTypel": {"@id": "pesc:academicSummaryType", "@type": "xsd:string"},
+	    "accreditation": {"@id": "pesc:accreditation", "@type": "id"},
+	    "accreditingBodyCode": {"@id": "pesc:accreditingBodyCode", "@type": "xsd:string"},
+	    "accreditingBodyName": {"@id": "pesc:accreditingBodyName", "@container": "@language"},
+	    "address": {"@id": "pesc:address", "@type": "id"},
+	    "addressLine": {"@id": "pesc:addressLine", "@container": "@language"}, 
+	    "areaCityCode": {"@id": "pesc:areaCityCode", "@type": "xsd:string"},
+	    "atp": {"@id": "pesc:atp", "@type": "xsd:string"},
+	    "attentionLine": {"@id": "pesc:attentionLine", "@type": "xsd:string"}, 
+	    "birthDate": {"@id": "pesc:birthDate", "@type": "xsd:date"},
+	    "city": {"@id": "pesc:city", "@type": "xsd:string"},
+	    "contact": {"@id": "pesc:contact", "@type": "id"},
+	    "course": {"@id": "pesc:course", "@type": "id"},
+	    "courseAcademicGrade": {"@id": "pesc:courseAcademicGrade", "@type": "xsd:string"},
+	    "courseAcademicGradeScaleCode": {"@id": "pesc:courseAcademicGradeScaleCode", "@type": "xsd:string"},
+	    "courseCIPCode": {"@id": "pesc:courseCIPCode", "@type": "xsd:string"},
+	    "courseCreditBasis": {"@id": "pesc:courseCreditBasis", "@type": "xsd:string"},
+	    "courseCreditEarned": {"@id": "pesc:courseCreditEarned", "@type": "xsd:integer"},
+	    "courseCreditLevel":  {"@id": "pesc:courseCreditLevel", "@type": "xsd:string"},
+	    "courseNumber": {"@id": "pesc:courseNumber", "@type": "xsd:string"},
+	    "courseSubjectAbbreviation": {"@id": "pesc:courseSubjectAbbreviation", "@type": "xsd:string"},
+	    "createdDateTime": {"@id": "pesc:createdDateTime", "@type": "xsd:dateTime"},
+	    "courseCreditUnits": {"@id": "pesc:courseCreditUnits", "@type": "xsd:string"},
+	    "courseCreditValue": {"@id": "pesc:courseCreditValue", "@type": "xsd:integer"},
+	    "creditHoursAttempted": {"@id": "pesc:creditHoursAttempted", "@type": "xsd:integer"},
+        "creditHoursEarned": {"@id": "pesc:credeitHoursEarned", "@type": "xsd:integer"},
+        "creditHoursforGPA": {"@id": "pesc:creditHoursforGPA", "@type": "xsd:integer"},
+        "courseTitle": {"@id": "pesc:courseTitle", "@container": "@language"},
+        "creditUnit": {"@id": "pesc:faxPhone", "@type": "xsd:string"},
+        "deceasedIndicator": {"@id": "pesc:deceasedIndicator", "@type": "xsd:boolean"},
+        "destination": {"@id": "pesc:destination", "@type": "id"}, 
+        "documentID": {"@id": "pesc:documentID", "@type": "xsd:string"},
+        "documentTypeCode": {"@id": "pesc:documentTypeCode", "@type": "xsd:string"},
+        "expirationDate": {"@id": "pesc:expirationDate", "@type": "xsd:date"},
+	    "faxPhone": {"@id": "pesc:faxPhone", "@type": "xsd:string"},
+	    "fice": {"@id": "pesc:fice", "@type": "xsd:string"},
+	    "genderCode": {"@id": "pesc:genderCode", "@container": "@language"}, 
+	    "gpa": {"@id": "pesc:gpa", "@type": "id"},
+	    "gradePointAverage": {"@id": "pesc:gradePointAverage", "@type": "xsd:decimal"},
+	    "highschool": {"@id": "pesc:highschool", "@type": "id"},
+	    "email": {"@id": "pesc:email", "@type": "xsd:string"},
+	    "firstName": {"@id": "pesc:firstName", "@type": "xsd:string"},
+	    "ceebact": {"@id": "pesc:ceebact", "@type": "xsd:string"},
+	    "lastName": {"@id": "pesc:lastName", "@type": "xsd:string"},
+	    "localOrganizationCodeID": {"@id": "pesc:localOrganizationCodeID", "@type": "xsd:string"},
+	    "localOrganizationID": {"@id": "pesc:localOrganizationID", "@type": "id"},
+	    "localOrganizationIDCode": {"@id": "pesc:localOrganizationIDCode", "@type": "xsd:string"},
+	    "localOrgainzationIDQualifier": {"@id": "pesc:localOrgainzationIDQualifier", "@type": "xsd:string"},
+	    "localOrganizationCodeQualifier": {"@id": "pesc:localOrganizationCodeQualifier", "@type": "xsd:string"},
+	    "middleName": {"@id": "pesc:middleName", "@type": "xsd:string"},
+	    "nameSuffix": {"@id": "pesc:nameSuffix", "@type": "xsd:string"},
+	    "organizationName": {"@id": "pesc:organizationName", "@container": "@language"},
+	    "originalCourseID": {"@id": "pesc:originalCourseID", "@type": "xsd:string"},
+	    "person": {"@id": "pesc:person", "@type": "id"},
+	    "phone": {"@id": "pesc:faxPhone", "@type": "id"},
+	    "phoneNumber": {"@id": "pesc:phoneNumber", "@type": "xsd:string"},
+	    "postalCode": {"@id": "pesc:postalCode", "@type": "xsd:string"},
+	    "school": {"@id": "pesc:school", "@type": "id"},
+	    "schoolAcademicAward": {"@id": "pesc:schoolAcademicAward", "@type": "id"},
+	    "sessionDesignator": {"@id": "pesc:sessionDesignator", "@type": "xsd:string"},
+	    "sessionDesignatorSuffix": {"@id": "pesc:sessionDesignatorSuffix", "@type": "xsd:string"},
+	    "sessionName": {"@id": "pesc:sessionNamel", "@type": "xsd:string"},
+	    "sessionType": {"@id": "pesc:sessionType", "@type": "xsd:string"},
+	    "source": {"@id": "pesc:source", "@type": "id"},
+	    "ssn": {"@id": "pesc:ssn", "@type": "xsd:string"},
+	    "stateProvinceCode": {"@id": "pesc:stateProvinceCode", "@type": "xsd:string"},
+	    "student": {"@id": "pesc:student", "@type": "id"},
+	    "transmissionType": {"@id": "pesc:transmissionType", "@type": "xsd:string"},
+	    "transmissionData": {"@id": "pesc:transmissionData", "@type": "id"},
+	    "url": {"@id": "pesc:url", "@type": "xsd:string"}
+	},
+	"@graph": [
+        {
+            "@id": "http://example.org/660b6b69-55a6-447b-b585-502405d178b7",
+            "@type": "https://www.pesc.org/transcript/AcademicSession",
+            "academicSessionDetail": "http://example.org/02a0214a-a4a5-4fc3-a8a4-5198e0527910"
+        },
+        {
+            "@id": "http://example.org/99b1226b-0a95-455d-be7e-1e8d1087ccd2",
+            "@type": "pesc:Contact",
+            "address": "http://example.org/50e5db7d-2abf-491d-85da-6b3727e38662",
+            "email": "Registrar@mail.utexas.edu",
+            "faxPhone": "http://example.org/12a27d1e-648d-4517-acff-d42c754042ab",
+            "phone": "http://example.org/40a77368-df54-473f-976e-948d0a48feee",
+            "url": "www.utexas.edu"
+        },
+        {
+            "@id": "http://example.org/d1fe09c8-d833-4266-ab1b-7c7d51d42fa2",
+            "@type": "pesc:AcademicRecord",
+            "academicSession": "http://example.org/660b6b69-55a6-447b-b585-502405d178b7",
+            "academicSummary": "http://example.org/9ab000e8-cbae-4660-8d6c-e19d4e50d8b4",
+            "schoolAcademicAward": "http://example.org/42a0ea60-b57b-4c05-9b79-1ecaa26b7db3"
+        },
+        {
+            "@id": "http://example.org/0b81d4c5-6177-484f-b508-197119768e39",
+            "@type": "pesc:Student",
+            "academicRecord": "http://example.org/d1fe09c8-d833-4266-ab1b-7c7d51d42fa2",
+            "person": "http://example.org/53acb75f-0576-463f-ae24-dcd9a638c11d"
+        },
+        {
+            "@id": "http://example.org/e6f9b24f-8a03-4f33-bc8e-e1af776a23f6",
+            "@type": "pesc:Organization",
+            "ceebact": "440320",
+            "organizationName": {"en-US": "AUSTIN HIGH SCHOOL"}
+        },
+        {
+            "@id": "http://example.org/9ab000e8-cbae-4660-8d6c-e19d4e50d8b4",
+            "@type":"pesc:AcademicSummary",
+            "academicSummaryLevel": "Undergraduate",
+            "academicSummaryType": "All",
+            "gpa": "http://example.org/f0993816-d86c-4086-b483-7924adb80f5e"
+        },
+        {
+            "@id": "http://example.org/c03ed137-1d42-48e8-9679-d77e6fa72fe4",
+            "@type": "pesc:GPA",
+            "creditHoursAttempted": 13,
+            "creditHoursEarned": 7,
+            "creditHoursforGPA": 13,
+            "creditUnit": "Semester",
+            "gradePointAverage": "1.3076"
+        },
+        {
+            "@id": "http://example.org/23df2465-d3a1-4f2a-891f-36241037e23a",
+            "@type": "pesc:Name",
+            "firstName": "Test",
+            "lastName": "Speede",
+            "middleName": ["Test", "Record"],
+            "nameCode": "Legal",
+            "nameSuffix": "IV"
+        },
+        {
+            "@id": "http://example.org/42a0ea60-b57b-4c05-9b79-1ecaa26b7db3",
+            "@type": "pesc:SchoolAcademicAward",
+            "academicAward": "http://example.org/0cbaad91-1e79-47b9-bb75-2978ddcf63e0",
+            "school": "http://example.org/e6f9b24f-8a03-4f33-bc8e-e1af776a23f6"
+        },
+        {
+            "@id": "http://example.org/12a27d1e-648d-4517-acff-d42c754042ab",
+            "@type": "pesc:FaxPhone",
+            "areaCityCode": "512",
+            "phoneNumber": "4757600"
+        },
+        {
+            "@id": "http://example.org/fe5e4aeb-5474-417d-9ec8-26f7840cc672",
+            "@type": "pesc:LocalOrganizationID",
+            "localOrgainzationIDQualifier": "TX",
+            "localOrganizationIDCode": "123456"
+        },
+        {
+            "@id": "http://example.org/02a0214a-a4a5-4fc3-a8a4-5198e0527910",
+            "@type": "pesc:AcademicSessionDetail",
+            "academicProgram": "http://example.org/8bc3b350-e847-46be-ad51-63f1aeb03971",
+            "academicSummary": "http://example.org/06ca0470-9ea5-444b-837a-f23167993232",
+            "course": "http://example.org/88139774-0f57-42fd-a16f-5e6ca2189b28",
+            "sessionDesignator": "1986-09",
+            "sessionDesignatorSuffix": "2",
+            "sessionName": "FALL SEMESTER 1986",
+            "sessionType": "Semester"
+        },
+        {
+            "@id": "http://example.org/ac8ed498-6107-4a89-8f5f-f4643d191a1e",
+            "@type": "pesc:LocalOrganizationID",
+            "localOrganizationCodeID": "1234",
+            "localOrganizationCodeQualifier": "FL"
+        },
+        {
+            "@id": "http://example.org/64966b06-dd50-419b-83c1-d751f4ec92a7",
+            "@type": "pesc:TransmissionData",
+            "createdDateTime": "2005-02-02T10:04:29-05:00",
+            "destination": "http://example.org/6e85bd42-efbe-4929-88ea-40f4bb6f0ad7",
+            "documentID": "050330001",
+            "documentTypeCode": "RequestedRecord",
+            "source": "http://example.org/03a1fc57-0879-4ac2-aa00-f29bbe5e8eb2",
+            "transmissionType": "Original"
+        },
+        {
+            "@id": "http://example.org/0cbaad91-1e79-47b9-bb75-2978ddcf63e0",
+            "@type": "pesc:AcademicAward",
+            "academicAwardDate": "1985-05-01",
+            "academicAwardLevel": "B18",
+            "academicAwardTitle": "Standard High School Diploma",
+            "academicCompletionIndicator": true
+        },
+        {
+            "@id": "http://example.org/f84b153e-9d79-4d6d-9d14-b286cd51b555",
+            "@type": "pesc:Contact",
+            "address": "http://example.org/ffde90ad-77cf-4920-a2ec-752b33f029f1",
+            "email": "TestSpeede@aol.com"
+        },
+        {
+            "@id": "http://example.org/68075a07-7e52-43ec-b9c8-28dfc7ba7dbc",
+            "@type": "pescAccreditation",
+            "accreditingBodyCode": "SACS",
+            "accreditingBodyName": {"en-US": "Southern Association of Colleges and Schools"}
+        },
+        {
+            "@id": "http://example.org/06ca0470-9ea5-444b-837a-f23167993232",
+            "@type": "pesc:AcademicSummary",
+            "gpa": "http://example.org/c03ed137-1d42-48e8-9679-d77e6fa72fe4"
+        },
+        {
+            "@id": "http://example.org/6e85bd42-efbe-4929-88ea-40f4bb6f0ad7",
+            "@type": "pesc:Organization",
+            "pesc:fice": "001506",
+            "localOrganizationID": "http://example.org/ac8ed498-6107-4a89-8f5f-f4643d191a1e",
+            "organizationName": {"en-US": "Miami Dade College"}
+        },
+        {
+            "@id": "http://example.org/8bc3b350-e847-46be-ad51-63f1aeb03971",
+            "@type": "https://www.pesc.org/transcript/AcademicProgram",
+            "academicProgramName": "ENGINERING"
+        },
+        {
+            "@id": "http://example.org/88139774-0f57-42fd-a16f-5e6ca2189b28",
+            "@type": "https://www.pesc.org/transcript/Course",
+            "courseAcademicGrade": "B",
+            "courseAcademicGradeScaleCode": "25",
+            "courseCIPCode": "999",
+            "courseCreditBasis": "Regular",
+            "courseCreditEarned": 3,
+            "courseCreditLevel": "LowerDivision",
+            "courseCreditUnits": "Semester",
+            "courseCreditValue": 3,
+            "courseNumber": "310L",
+            "courseSubjectAbbreviation": "GOV",
+            "courseTitle": {"en-US": "AMERICAN GOVERNMENT"},
+            "originalCourseID": "ID23"
+        },
+        {
+            "@id": "http://example.org/03a1fc57-0879-4ac2-aa00-f29bbe5e8eb2",
+            "@type": "pesc:Organization",
+            "accreditation": "http://example.org/68075a07-7e52-43ec-b9c8-28dfc7ba7dbc",
+            "contact": "http://example.org/99b1226b-0a95-455d-be7e-1e8d1087ccd2",
+            "localOrganizationID": "http://example.org/fe5e4aeb-5474-417d-9ec8-26f7840cc672",
+            "atp": "006882",
+            "organizationName": {"en-US": "THE UNIVERSITY OF TEXAS AT AUSTIN"}
+        },
+        {
+            "@id": "http://example.org/f0993816-d86c-4086-b483-7924adb80f5e",
+            "@type": "pesc:GPA",
+            "creditHoursAttempted": 159,
+            "creditHoursEarned": 136,
+            "creditHoursforGPA": 153,
+            "creditUnit": "Semester",
+            "gradePointAverage": "3.0915"
+        },
+        {
+            "@id": "http://example.org/50e5db7d-2abf-491d-85da-6b3727e38662",
+            "@type": "pesc:Address",
+            "addressLine": {"en-US": "Office of the Registrar"},
+            "attentionLine": "Jane Shaugness",
+            "city": "Austin",
+            "postalCode": "78712",
+            "stateProvinceCode": "TX"
+        },
+        {
+            "@id": "http://example.org/ffde90ad-77cf-4920-a2ec-752b33f029f1",
+            "@type": "pesc:Address",
+            "addressLine": "1223 University Dr",
+            "city": "Austin",
+            "expirationDate": "2009-06-15",
+            "postalCode": "78211",
+            "stateProvinceCode": "TX"
+        },
+        {
+            "@id": "http://example.org/80f95181-dcfb-42fb-a3c8-afc3ef092608",
+            "@type": "pesc:CollegeTranscript",
+            "student": "http://example.org/0b81d4c5-6177-484f-b508-197119768e39",
+            "transmissionData": "http://example.org/64966b06-dd50-419b-83c1-d751f4ec92a7"
+        },
+        {
+            "@id": "http://example.org/40a77368-df54-473f-976e-948d0a48feee",
+            "@type": "pesc:Phone",
+            "areaCityCode": "512",
+            "phoneNumber": "4757638"
+        },
+        {
+            "@id": "http://example.org/53acb75f-0576-463f-ae24-dcd9a638c11d",
+            "@type": "pesc:Person",
+            "birthDate": "1967-07-14",
+            "contact": "http://example.org/f84b153e-9d79-4d6d-9d14-b286cd51b555",
+            "deceasedIndicator": true,
+            "genderCode": {"en-US": "Female"},
+            "highschool": "http://example.org/e6f9b24f-8a03-4f33-bc8e-e1af776a23f6",
+            "name": "http://example.org/23df2465-d3a1-4f2a-891f-36241037e23a",
+            "ssn": "100000000"
+        }
+    ]
+}

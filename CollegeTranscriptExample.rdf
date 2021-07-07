@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:pesc="https://www.pesc.org/transcript/">
+    
+    <rdf:Description rdf:about="http://example.org/80f95181-dcfb-42fb-a3c8-afc3ef092608">
+        <rdf:type rdf:resource="https://www.pesc.org/transcript/CollegeTranscript"/>
+        <pesc:transmissionData>
+            <pesc:TransmissionData rdf:about="http://example.org/64966b06-dd50-419b-83c1-d751f4ec92a7">
+                <pesc:source>
+                    <pesc:Organization rdf:about="http://example.org/03a1fc57-0879-4ac2-aa00-f29bbe5e8eb2">
+                        <pesc:localOrganizationID>
+                            <pesc:LocalOrganizationID rdf:about="http://example.org/fe5e4aeb-5474-417d-9ec8-26f7840cc672">
+                                <pesc:localOrganizationIDCode>123456</pesc:localOrganizationIDCode>
+                                <pesc:localOrgainzationIDQualifier>TX</pesc:localOrgainzationIDQualifier>
+                            </pesc:LocalOrganizationID>
+                        </pesc:localOrganizationID>
+                        
+                        <pesc:accreditation>
+                            <pesc:Accreditation rdf:about="http://example.org/68075a07-7e52-43ec-b9c8-28dfc7ba7dbc">
+                                <pesc:accreditingBodyCode>SACS</pesc:accreditingBodyCode>
+                                <pesc:accreditingBodyName xml:lang="en-US">Southern Association of Colleges and Schools</pesc:accreditingBodyName>
+                            </pesc:Accreditation>
+                        </pesc:accreditation>
+                        
+                        <pesc:contact>
+                            <pesc:Contact rdf:about="http://example.org/99b1226b-0a95-455d-be7e-1e8d1087ccd2">
+                                <pesc:address>
+                                    <pesc:Address rdf:about="http://example.org/50e5db7d-2abf-491d-85da-6b3727e38662">
+                                        <pesc:addressLine xml:lang="en-US">Office of the Registrar</pesc:addressLine>
+                                        <pesc:city>Austin</pesc:city>
+                                        <pesc:stateProvinceCode>TX</pesc:stateProvinceCode>
+                                        <pesc:postalCode>78712</pesc:postalCode>
+                                        <pesc:attentionLine>Jane Shaugness</pesc:attentionLine>
+                                    </pesc:Address>
+                                </pesc:address>
+                                
+                                <pesc:phone>
+                                    <pesc:Phone rdf:about="http://example.org/40a77368-df54-473f-976e-948d0a48feee">
+                                        <pesc:areaCityCode>512</pesc:areaCityCode>
+                                        <pesc:phoneNumber>4757638</pesc:phoneNumber>
+                                    </pesc:Phone>
+                                </pesc:phone>
+                                
+                                <pesc:faxPhone>
+                                    <pesc:FaxPhone rdf:about="http://example.org/12a27d1e-648d-4517-acff-d42c754042ab">
+                                        <pesc:areaCityCode>512</pesc:areaCityCode>
+                                        <pesc:phoneNumber>4757600</pesc:phoneNumber>
+                                    </pesc:FaxPhone>
+                                </pesc:faxPhone>
+                                
+                                <pesc:email>Registrar@mail.utexas.edu</pesc:email>
+                                <pesc:url>www.utexas.edu</pesc:url>
+                            </pesc:Contact>
+                        </pesc:contact>
+                        
+                        <pesc:atp>006882</pesc:atp>
+                        <pesc:organizationName xml:lang="en-US">THE UNIVERSITY OF TEXAS AT AUSTIN</pesc:organizationName>
+                    </pesc:Organization>
+                </pesc:source>
+                
+                <pesc:destination>
+                    <pesc:Organization rdf:about="http://example.org/6e85bd42-efbe-4929-88ea-40f4bb6f0ad7">
+                        <pesc:fice>001506</pesc:fice>
+                        <pesc:localOrganizationID>
+                            <pesc:LocalOrganizationID rdf:about="http://example.org/ac8ed498-6107-4a89-8f5f-f4643d191a1e">
+                                <pesc:localOrganizationCodeID>1234</pesc:localOrganizationCodeID>
+                                <pesc:localOrganizationCodeQualifier>FL</pesc:localOrganizationCodeQualifier>
+                            </pesc:LocalOrganizationID>
+                        </pesc:localOrganizationID>
+                        
+                        <pesc:organizationName xml:lang="en-US">Miami Dade College</pesc:organizationName>
+                    </pesc:Organization>
+                </pesc:destination>
+                
+                <pesc:documentID>050330001</pesc:documentID>
+                <pesc:createdDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2005-02-02T10:04:29-05:00</pesc:createdDateTime>
+                <pesc:documentTypeCode>RequestedRecord</pesc:documentTypeCode>
+                <pesc:transmissionType>Original</pesc:transmissionType>
+            </pesc:TransmissionData>
+        </pesc:transmissionData>
+        
+        <pesc:student>
+            <pesc:Student rdf:about="http://example.org/0b81d4c5-6177-484f-b508-197119768e39">
+                <pesc:person>
+                    <pesc:Person rdf:about="http://example.org/53acb75f-0576-463f-ae24-dcd9a638c11d">
+                        <pesc:ssn>100000000</pesc:ssn>
+                        <pesc:birthDate>1967-07-14</pesc:birthDate>
+                        <pesc:genderCode xml:lang="en-US">Female</pesc:genderCode>
+                        <pesc:deceasedIndicator rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pesc:deceasedIndicator>
+                        <pesc:name>
+                            <pesc:Name rdf:about="http://example.org/23df2465-d3a1-4f2a-891f-36241037e23a">
+                                <pesc:nameCode>Legal</pesc:nameCode>
+                                <pesc:firstName>Test</pesc:firstName>
+                                <pesc:middleName>Record</pesc:middleName>
+                                <pesc:middleName>Test</pesc:middleName>
+                                <pesc:lastName>Speede</pesc:lastName>
+                                <pesc:nameSuffix>IV</pesc:nameSuffix>
+                            </pesc:Name>
+                        </pesc:name>
+                        
+                        <pesc:contact>
+                            <pesc:Contact rdf:about="http://example.org/f84b153e-9d79-4d6d-9d14-b286cd51b555">
+                                <pesc:address>
+                                    <pesc:Address rdf:about="http://example.org/ffde90ad-77cf-4920-a2ec-752b33f029f1">
+                                        <pesc:addressLine>1223 University Dr</pesc:addressLine>
+                                        <pesc:city>Austin</pesc:city>
+                                        <pesc:stateProvinceCode>TX</pesc:stateProvinceCode>
+                                        <pesc:postalCode>78211</pesc:postalCode>
+                                        <pesc:expirationDate>2009-06-15</pesc:expirationDate>
+                                    </pesc:Address>
+                                </pesc:address>
+                                
+                                <pesc:email>TestSpeede@aol.com</pesc:email>
+                            </pesc:Contact>
+                        </pesc:contact>
+                        
+                        <pesc:highschool rdf:resource="http://example.org/e6f9b24f-8a03-4f33-bc8e-e1af776a23f6"/>
+                    </pesc:Person>
+                </pesc:person>
+                
+                <pesc:academicRecord>
+                    <pesc:AcademicRecord rdf:about="http://example.org/d1fe09c8-d833-4266-ab1b-7c7d51d42fa2">
+                        <pesc:schoolAcademicAward>
+                            <pesc:SchoolAcademicAward rdf:about="http://example.org/42a0ea60-b57b-4c05-9b79-1ecaa26b7db3">
+                                <pesc:academicAward>
+                                    <pesc:AcademicAward rdf:about="http://example.org/0cbaad91-1e79-47b9-bb75-2978ddcf63e0">
+                                        <pesc:academicAwardLevel>B18</pesc:academicAwardLevel>
+                                        <pesc:academicAwardDate>1985-05-01</pesc:academicAwardDate>
+                                        <pesc:academicAwardTitle>Standard High School Diploma</pesc:academicAwardTitle>
+                                        <pesc:academicCompletionIndicator rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</pesc:academicCompletionIndicator>
+                                    </pesc:AcademicAward>
+                                </pesc:academicAward>
+                                
+                                <pesc:school rdf:resource="http://example.org/e6f9b24f-8a03-4f33-bc8e-e1af776a23f6"/>
+                            </pesc:SchoolAcademicAward>
+                        </pesc:schoolAcademicAward>
+                        
+                        <pesc:academicSummary>
+                            <pesc:AcademicSummary rdf:about="http://example.org/9ab000e8-cbae-4660-8d6c-e19d4e50d8b4">
+                                <pesc:academicSummaryType>All</pesc:academicSummaryType>
+                                <pesc:academicSummaryLevel>Undergraduate</pesc:academicSummaryLevel>
+                                <pesc:gpa>
+                                    <pesc:GPA rdf:about="http://example.org/f0993816-d86c-4086-b483-7924adb80f5e">
+                                        <pesc:creditHoursAttempted rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">159</pesc:creditHoursAttempted>
+                                        <pesc:creditHoursEarned rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136</pesc:creditHoursEarned>
+                                        <pesc:creditUnit>Semester</pesc:creditUnit>
+                                        <pesc:gradePointAverage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0915</pesc:gradePointAverage>
+                                        <pesc:creditHoursforGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">153</pesc:creditHoursforGPA>
+                                    </pesc:GPA>
+                                </pesc:gpa>
+                                
+                            </pesc:AcademicSummary>
+                        </pesc:academicSummary>
+                        
+                        <pesc:academicSession>
+                            <pesc:AcademicSession rdf:about="http://example.org/660b6b69-55a6-447b-b585-502405d178b7">
+                                <pesc:academicSessionDetail>
+                                    <pesc:AcademicSessionDetail rdf:about="http://example.org/02a0214a-a4a5-4fc3-a8a4-5198e0527910">
+                                        <pesc:sessionDesignator>1986-09</pesc:sessionDesignator>
+                                        <pesc:sessionDesignatorSuffix>2</pesc:sessionDesignatorSuffix>
+                                        <pesc:sessionName>FALL SEMESTER 1986</pesc:sessionName>
+                                        <pesc:sessionType>Semester</pesc:sessionType>
+                                        <pesc:academicProgram>
+                                            <pesc:AcademicProgram rdf:about="http://example.org/8bc3b350-e847-46be-ad51-63f1aeb03971">
+                                                <pesc:academicProgramName>ENGINERING</pesc:academicProgramName>
+                                            </pesc:AcademicProgram>
+                                        </pesc:academicProgram>
+                                        
+                                        <pesc:course>
+                                            <pesc:Course rdf:about="http://example.org/88139774-0f57-42fd-a16f-5e6ca2189b28">
+                                                <pesc:courseCreditBasis>Regular</pesc:courseCreditBasis>
+                                                <pesc:courseCreditUnits>Semester</pesc:courseCreditUnits>
+                                                <pesc:courseCreditLevel>LowerDivision</pesc:courseCreditLevel>
+                                                <pesc:courseCreditValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</pesc:courseCreditValue>
+                                                <pesc:courseCreditEarned rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</pesc:courseCreditEarned>
+                                                <pesc:courseAcademicGradeScaleCode>25</pesc:courseAcademicGradeScaleCode>
+                                                <pesc:courseAcademicGrade>B</pesc:courseAcademicGrade>
+                                                <pesc:courseCIPCode>999</pesc:courseCIPCode>
+                                                <pesc:courseSubjectAbbreviation>GOV</pesc:courseSubjectAbbreviation>
+                                                <pesc:courseNumber>310L</pesc:courseNumber>
+                                                <pesc:originalCourseID>ID23</pesc:originalCourseID>
+                                                <pesc:courseTitle xml:lang="en-US">AMERICAN GOVERNMENT</pesc:courseTitle>
+                                            </pesc:Course>
+                                        </pesc:course>
+                                        
+                                        <pesc:academicSummary>
+                                            <pesc:AcademicSummary rdf:about="http://example.org/06ca0470-9ea5-444b-837a-f23167993232">
+                                                <pesc:gpa>
+                                                    <pesc:GPA rdf:about="http://example.org/c03ed137-1d42-48e8-9679-d77e6fa72fe4">
+                                                        <pesc:creditHoursAttempted rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</pesc:creditHoursAttempted>
+                                                        <pesc:creditHoursEarned rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</pesc:creditHoursEarned>
+                                                        <pesc:creditUnit>Semester</pesc:creditUnit>
+                                                        <pesc:gradePointAverage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3076</pesc:gradePointAverage>
+                                                        <pesc:creditHoursforGPA rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</pesc:creditHoursforGPA>
+                                                    </pesc:GPA>
+                                                </pesc:gpa>
+                                                
+                                            </pesc:AcademicSummary>
+                                        </pesc:academicSummary>
+                                        
+                                    </pesc:AcademicSessionDetail>
+                                </pesc:academicSessionDetail>
+                                
+                            </pesc:AcademicSession>
+                        </pesc:academicSession>
+                        
+                    </pesc:AcademicRecord>
+                </pesc:academicRecord>
+                
+            </pesc:Student>
+        </pesc:student>
+        
+    </rdf:Description>
+    
+    <pesc:Organization rdf:about="http://example.org/e6f9b24f-8a03-4f33-bc8e-e1af776a23f6">
+        <pesc:organizationName xml:lang="en-US">AUSTIN HIGH SCHOOL</pesc:organizationName>
+        <pesc:ceebact>440320</pesc:ceebact>
+    </pesc:Organization>
+    
+</rdf:RDF>
