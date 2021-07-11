@@ -61,11 +61,11 @@ ex:40a77368-df54-473f-976e-948d0a48feee a pesc:Phone ;
 ex:12a27d1e-648d-4517-acff-d42c754042ab a pesc:FaxPhone ;
     pesc:areaCityCode "512" ;
     pesc:phoneNumber "4757600" .
-
+       
 ex:0b81d4c5-6177-484f-b508-197119768e39 a pesc:Student ;
     pesc:person ex:53acb75f-0576-463f-ae24-dcd9a638c11d ;
-    pesc:academicRecord ex:d1fe09c8-d833-4266-ab1b-7c7d51d42fa2 .
-    
+    pesc:academicRecord ex:d1fe09c8-d833-4266-ab1b-7c7d51d42fa2 .    
+
 ex:53acb75f-0576-463f-ae24-dcd9a638c11d a pesc:Person ;
     pesc:ssn "100000000" ;
     pesc:birthDate "1967-07-14" ;
