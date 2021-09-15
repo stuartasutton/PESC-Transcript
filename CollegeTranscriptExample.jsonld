@@ -1,6 +1,6 @@
 {
 	"@context": {
-	    "pesc": "https://www.pesc.org/transcript/",
+	    "pesc": "https://www.pesc.org/transcript/json-ld-2021/",
 	    "xsd": "http://www.w3.org/2001/XMLSchema#",
 	    "academicAward": {"@id": "pesc:academicAward", "@type": "id"},
 	    "academicAwardDate": {"@id": "pesc:academicAwardDate", "@type": "xsd:date"},
